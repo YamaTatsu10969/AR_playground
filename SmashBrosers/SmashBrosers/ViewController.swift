@@ -64,47 +64,55 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         earthNode.addChildNode(linkNode)
         
         //これで画像をタップしたら、とかもできるようになる。
-        //targetのselfはここで関数を使うよってこと
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
-        //このsceneViewに追加するよ
-        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-        
+//        //targetのselfはここで関数を使うよってこと
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
+//        //このsceneViewに追加するよ
+//        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
+//        
         // Set the scene to the view
         sceneView.scene = scene
     }
     
-    @objc func tapped(recognizer :UIGestureRecognizer){
-        //        print("タップしたよ")
-        // ! はアプリ落ちる。必ずsceneViewなら !で良い。無難なのは？でnilを返す
-        let sceneView = recognizer.view as! SCNView
-        //どこを触ったか
-        let touchLocation = recognizer.location(in: sceneView)
-        //
-        let hitResults = sceneView.hitTest(touchLocation, options: [:])
-        
-        if !hitResults.isEmpty {
-            
-            let node = hitResults[0].node
-            if let name = node.geometry?.name {
-                if name == "moon"{
-                    node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-                }
-            }
-            
-            //            let material = node.geometry?.material(named: "Color")
-            //
-            //            material?.diffuse.contents = UIColor.random()
-        }
-    }
+//    @objc func tapped(recognizer :UIGestureRecognizer){
+//        //        print("タップしたよ")
+//        // ! はアプリ落ちる。必ずsceneViewなら !で良い。無難なのは？でnilを返す
+//        let sceneView = recognizer.view as! SCNView
+//        //どこを触ったか
+//        let touchLocation = recognizer.location(in: sceneView)
+//        //
+//        let hitResults = sceneView.hitTest(touchLocation, options: [:])
+//
+//        if !hitResults.isEmpty {
+//
+//            let node = hitResults[0].node
+//            if let name = node.geometry?.name {
+//                if name == "moon"{
+//                    node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+//                }
+//            }
+//
+//            //            let material = node.geometry?.material(named: "Color")
+//            //
+//            //            material?.diffuse.contents = UIColor.random()
+//        }
+//    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
+       // let configuration = ARWorldTrackingConfiguration()
+        let imageConfiguration = ARImageTrackingConfiguration()
         
+        //ARImageTrackingConfigurationに目的の画像を設定
+//        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
+//            imageConfiguration.trackingImages = imageToTrack
+//            imageConfiguration.maximumNumberOfTrackedImages = 1
+//            print("Images...")
+//        }
+
         // Run the view's session
-        sceneView.session.run(configuration)
+        sceneView.session.run(imageConfiguration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
