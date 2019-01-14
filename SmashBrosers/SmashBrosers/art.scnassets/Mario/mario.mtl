@@ -1,0 +1,254 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 16.11.2016 19:53:05
+
+newmtl Material__703
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+
+newmtl Material__699
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+
+newmtl Material__698
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+
+newmtl Material__702
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+
+newmtl Material__697
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+
+newmtl Material__696
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+
+newmtl Material__694
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+
+newmtl Material__692
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+
+newmtl Material__689
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+
+newmtl Material__695
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\skin.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\skin.png
+
+newmtl Material__688
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\hair.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\hair.png
+
+newmtl Material__687
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\cap.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\cap.png
+
+newmtl Material__684
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\2D4B2E3B_c.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\2D4B2E3B_c.png
+
+newmtl Material__685
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\5B016C9B_c.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\5B016C9B_c.png
+
+newmtl Material__693
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+
+newmtl Material__691
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+
+newmtl Material__690
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+
+newmtl Material__686
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\128A33CA_c.png
+	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\128A33CA_c.png
