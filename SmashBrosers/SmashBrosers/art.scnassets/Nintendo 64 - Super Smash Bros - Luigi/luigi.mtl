@@ -1,7 +1,7 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 16.11.2016 19:53:05
+# File Created: 16.11.2016 20:07:35
 
-newmtl Material__703
+newmtl Material__739
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -12,10 +12,10 @@ newmtl Material__703
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+	map_Ka shoes.png
+	map_Kd shoes.png
 
-newmtl Material__699
+newmtl Material__732
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -26,10 +26,10 @@ newmtl Material__699
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Ka overalls.png
+	map_Kd overalls.png
 
-newmtl Material__698
+newmtl Material__731
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -40,10 +40,10 @@ newmtl Material__698
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Ka overalls.png
+	map_Kd overalls.png
 
-newmtl Material__702
+newmtl Material__740
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -54,10 +54,10 @@ newmtl Material__702
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\shoes.png
+	map_Ka shoes.png
+	map_Kd shoes.png
 
-newmtl Material__697
+newmtl Material__730
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -68,10 +68,10 @@ newmtl Material__697
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Ka overalls.png
+	map_Kd overalls.png
 
-newmtl Material__696
+newmtl Material__729
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -82,10 +82,10 @@ newmtl Material__696
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\overalls.png
+	map_Ka overalls.png
+	map_Kd overalls.png
 
-newmtl Material__694
+newmtl Material__734
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -96,10 +96,10 @@ newmtl Material__694
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+	map_Ka gloves.png
+	map_Kd gloves.png
 
-newmtl Material__692
+newmtl Material__736
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -110,10 +110,10 @@ newmtl Material__692
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Ka arms.png
+	map_Kd arms.png
 
-newmtl Material__689
+newmtl Material__735
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -124,10 +124,10 @@ newmtl Material__689
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Ka arms.png
+	map_Kd arms.png
 
-newmtl Material__695
+newmtl Material__728
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -138,10 +138,10 @@ newmtl Material__695
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\skin.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\skin.png
+	map_Ka hair.png
+	map_Kd hair.png
 
-newmtl Material__688
+newmtl Material__726
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -152,10 +152,10 @@ newmtl Material__688
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\hair.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\hair.png
+	map_Ka skin.png
+	map_Kd skin.png
 
-newmtl Material__687
+newmtl Material__727
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -166,10 +166,10 @@ newmtl Material__687
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\cap.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\cap.png
+	map_Ka skin.png
+	map_Kd skin.png
 
-newmtl Material__684
+newmtl Material__725
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -180,10 +180,10 @@ newmtl Material__684
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\2D4B2E3B_c.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\2D4B2E3B_c.png
+	map_Ka skin.png
+	map_Kd skin.png
 
-newmtl Material__685
+newmtl Material__724
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -194,10 +194,10 @@ newmtl Material__685
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\5B016C9B_c.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\5B016C9B_c.png
+	map_Ka cap.png
+	map_Kd cap.png
 
-newmtl Material__693
+newmtl Material__723
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -208,10 +208,10 @@ newmtl Material__693
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\gloves.png
+	map_Ka 366706EA_c.png
+	map_Kd 366706EA_c.png
 
-newmtl Material__691
+newmtl Material__721
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -222,10 +222,10 @@ newmtl Material__691
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Ka E5A86E7_c.png
+	map_Kd E5A86E7_c.png
 
-newmtl Material__690
+newmtl Material__733
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -236,10 +236,10 @@ newmtl Material__690
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\arms.png
+	map_Ka gloves.png
+	map_Kd gloves.png
 
-newmtl Material__686
+newmtl Material__738
 	Ns 10.0000
 	Ni 1.5000
 	d 1.0000
@@ -250,5 +250,33 @@ newmtl Material__686
 	Kd 0.5880 0.5880 0.5880
 	Ks 0.0000 0.0000 0.0000
 	Ke 0.0000 0.0000 0.0000
-	map_Ka C:\Users\ComJay\Documents\models\ssb64_kirby\128A33CA_c.png
-	map_Kd C:\Users\ComJay\Documents\models\ssb64_kirby\128A33CA_c.png
+	map_Ka arms.png
+	map_Kd arms.png
+
+newmtl Material__737
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka arms.png
+	map_Kd arms.png
+
+newmtl Material__722
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka 5043C439_c.png
+	map_Kd 5043C439_c.png

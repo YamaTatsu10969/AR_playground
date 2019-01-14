@@ -38,12 +38,18 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let marioNode = marioScene.rootNode
         marioNode.position = SCNVector3(0,0,-1)
         
+        //CaptainFalcon作成
+        let captainFalconScene = SCNScene(named:"art.scnassets/CaptainFalcon/cf.obj")!
+        let captainFalconNode = captainFalconScene.rootNode
+        captainFalconNode.position = SCNVector3(0,0,2)
+        
         //動きはnodeに対してつけていく。nodeをどこに置くかを変える　timerで,earthNode.position = SCNVector3(0,0,-1) を減らしていくのもあり。
         //x,y,z は軸の方向、duration はどのくらいの間隔で回るか
         earthNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 4)))
         
         scene.rootNode.addChildNode(earthNode)
         earthNode.addChildNode(marioNode)
+        earthNode.addChildNode(captainFalconNode)
         
         //これで画像をタップしたら、とかもできるようになる。
         //targetのselfはここで関数を使うよってこと
