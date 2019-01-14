@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  earthAr
+//  SmashBrosers
 //
 //  Created by 山本竜也 on 2019/1/12.
 //  Copyright © 2019 山本竜也. All rights reserved.
