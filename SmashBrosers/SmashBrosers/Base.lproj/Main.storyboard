@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--All Star-->
         <scene sceneID="tXr-a1-R10">
             <objects>
                 <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Gbc-Gd-3la"/>
+                    <tabBarItem key="tabBarItem" title="All Star" image="smashBrothers" badgeValue="All Star" id="Gbc-Gd-3la" userLabel="All Star"/>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="1414" y="-805"/>
         </scene>
-        <!--Item-->
+        <!--Mario-->
         <scene sceneID="COs-C3-qfd">
             <objects>
-                <viewController id="c3g-hb-cLN" customClass="marioViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c3g-hb-cLN" customClass="MarioViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="flP-Cb-5YE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,20 +61,69 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sdc-oe-zCb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HXC-VM-eWI"/>
+                    <tabBarItem key="tabBarItem" title="Mario" image="star" id="HXC-VM-eWI"/>
                     <navigationItem key="navigationItem" id="j8g-LC-XOD"/>
                     <connections>
-                        <outlet property="sceneView" destination="MHn-Gi-lcz" id="3TN-fF-exo"/>
+                        <outlet property="sceneView" destination="MHn-Gi-lcz" id="9mA-ZJ-6e9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4a-L2-Kv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1414" y="29"/>
         </scene>
-        <!--Item-->
+        <!--Luigi-->
+        <scene sceneID="XvJ-8j-8o2">
+            <objects>
+                <viewController id="jsG-jB-nVQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Awu-Ff-k6D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yh-KB-C0H">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4yh-KB-C0H" firstAttribute="bottom" secondItem="QI4-6S-23s" secondAttribute="bottom" id="1MW-Id-akU"/>
+                            <constraint firstItem="4yh-KB-C0H" firstAttribute="leading" secondItem="Awu-Ff-k6D" secondAttribute="leading" id="OTa-R0-fgD"/>
+                            <constraint firstItem="4yh-KB-C0H" firstAttribute="top" secondItem="Awu-Ff-k6D" secondAttribute="top" id="rex-4G-lPu"/>
+                            <constraint firstAttribute="trailing" secondItem="4yh-KB-C0H" secondAttribute="trailing" id="twZ-W9-1l6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QI4-6S-23s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Luigi" image="kinoko_green" id="Kr2-UN-1Q4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbe-i2-AuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="1445"/>
+        </scene>
+        <!--CaptainFalcon-->
+        <scene sceneID="yD9-Li-gqy">
+            <objects>
+                <viewController id="gTL-hY-xxj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XnR-r6-Vsd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iwY-FS-g7Q">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dsZ-x3-5bR"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="CaptainFalcon" image="panchi" id="fuO-cP-1P2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ywG-p1-JKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="279" y="1352"/>
+        </scene>
+        <!--Link-->
         <scene sceneID="Ge5-H5-5dT">
             <objects>
-                <viewController id="eKL-IM-KM4" sceneMemberID="viewController">
+                <viewController id="eKL-IM-KM4" customClass="LinkViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dum-4P-oq5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,7 +136,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="byT-Aq-xFs"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="TJm-Ye-0lC"/>
+                    <tabBarItem key="tabBarItem" title="Link" image="sword" id="TJm-Ye-0lC"/>
+                    <connections>
+                        <outlet property="sceneView" destination="Sp1-yV-5Sx" id="KN0-6j-NBJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haj-y0-BB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -107,6 +159,8 @@
                         <segue destination="BV1-FR-VrT" kind="relationship" relationship="viewControllers" id="KRJ-uR-sKk"/>
                         <segue destination="c3g-hb-cLN" kind="relationship" relationship="viewControllers" id="qCV-4G-QTc"/>
                         <segue destination="eKL-IM-KM4" kind="relationship" relationship="viewControllers" id="175-yH-yXT"/>
+                        <segue destination="gTL-hY-xxj" kind="relationship" relationship="viewControllers" id="Iga-Kb-k9F"/>
+                        <segue destination="jsG-jB-nVQ" kind="relationship" relationship="viewControllers" id="L0g-Ha-Has"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ej-S5-vgC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -114,4 +168,11 @@
             <point key="canvasLocation" x="-948" y="134"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kinoko_green" width="32" height="32"/>
+        <image name="panchi" width="32" height="32"/>
+        <image name="smashBrothers" width="30" height="30"/>
+        <image name="star" width="32" height="32"/>
+        <image name="sword" width="32" height="32"/>
+    </resources>
 </document>

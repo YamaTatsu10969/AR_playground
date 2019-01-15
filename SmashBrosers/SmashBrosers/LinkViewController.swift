@@ -1,8 +1,8 @@
 //
-//  marioViewController.swift
+//  LinkViewController.swift
 //  SmashBrosers
 //
-//  Created by 山本竜也 on 2019/1/14.
+//  Created by 山本竜也 on 2019/1/16.
 //  Copyright © 2019 山本竜也. All rights reserved.
 //
 
@@ -10,10 +10,11 @@ import UIKit
 import SceneKit
 import ARKit
 
-class marioViewController: UIViewController, ARSCNViewDelegate  {
-
+class LinkViewController: UIViewController, ARSCNViewDelegate  {
+    
     
     @IBOutlet weak var sceneView: ARSCNView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,33 +56,48 @@ class marioViewController: UIViewController, ARSCNViewDelegate  {
         let node = SCNNode()
         
         if let imageAnchor = anchor as? ARImageAnchor {
+            //認識した画像に薄く青をつける
             let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
             plane.firstMaterial?.diffuse.contents = UIColor(red: 0, green: 0, blue: 1.0, alpha: 0.5)
             let planeNode = SCNNode(geometry: plane)
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            if let marioScene = SCNScene(named: "art.scnassets/Mario/mario.scn") {
+            //リンクを立たせる
+            if let linkScene = SCNScene(named: "art.scnassets/Link/link.obj") {
                 
-                if let marioNode = marioScene.rootNode.childNodes.first {
-                    marioNode.eulerAngles.x = .pi / 2
-                    marioNode.eulerAngles.z = .pi / 3 / 4
-                    planeNode.addChildNode(marioNode)
+                if let linkNode = linkScene.rootNode.childNodes.first {
+                    //画像に立つように
+                    linkNode.eulerAngles.x = .pi / 2
+                    //自分の方を向くように
+                    linkNode.eulerAngles.z = .pi / 3 / 4
+                    planeNode.addChildNode(linkNode)
+                    //5秒経ったら画面を遷移させる
+                    //                    var timer:Timer = Timer()
+                    //                    timer = Timer.scheduledTimer(timeInterval: 5.0,
+                    //                                                                   target: self,
+                    //                                                                   selector: Selector("changeView"),
+                    //                                                                   userInfo: nil,
+                    //                                                                   repeats: false)
                 }
             }
         }
         return node
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func changeView() {                                                                //
+        self.performSegue(withIdentifier: "toGetMario", sender: nil)                        //
     }
-    */
-
+    
+    
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

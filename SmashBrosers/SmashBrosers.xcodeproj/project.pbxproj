@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		671EB93921EC669400B3788A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 671EB93821EC669400B3788A /* Default-568h@2x.png */; };
-		671EB96A21ECD1AE00B3788A /* marioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EB96921ECD1AE00B3788A /* marioViewController.swift */; };
+		671EB96A21ECD1AE00B3788A /* MarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671EB96921ECD1AE00B3788A /* MarioViewController.swift */; };
 		672A960021E9943100B949D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672A95FF21E9943100B949D7 /* AppDelegate.swift */; };
 		672A960221E9943100B949D7 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 672A960121E9943100B949D7 /* art.scnassets */; };
 		672A960421E9943100B949D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 672A960321E9943100B949D7 /* ViewController.swift */; };
 		672A960721E9943100B949D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672A960521E9943100B949D7 /* Main.storyboard */; };
 		672A960921E9943100B949D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 672A960821E9943100B949D7 /* Assets.xcassets */; };
 		672A960C21E9943100B949D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 672A960A21E9943100B949D7 /* LaunchScreen.storyboard */; };
+		6754639921EE2F7D00135DBB /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6754639821EE2F7D00135DBB /* LinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		671EB93821EC669400B3788A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		671EB96921ECD1AE00B3788A /* marioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = marioViewController.swift; sourceTree = "<group>"; };
+		671EB96921ECD1AE00B3788A /* MarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarioViewController.swift; sourceTree = "<group>"; };
 		672A95FC21E9943100B949D7 /* SmashBrosers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmashBrosers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		672A95FF21E9943100B949D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		672A960121E9943100B949D7 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		672A960821E9943100B949D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		672A960B21E9943100B949D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		672A960D21E9943100B949D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6754639821EE2F7D00135DBB /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +66,8 @@
 				672A95FF21E9943100B949D7 /* AppDelegate.swift */,
 				672A960121E9943100B949D7 /* art.scnassets */,
 				672A960321E9943100B949D7 /* ViewController.swift */,
-				671EB96921ECD1AE00B3788A /* marioViewController.swift */,
+				671EB96921ECD1AE00B3788A /* MarioViewController.swift */,
+				6754639821EE2F7D00135DBB /* LinkViewController.swift */,
 				672A960521E9943100B949D7 /* Main.storyboard */,
 				672A960821E9943100B949D7 /* Assets.xcassets */,
 				672A960A21E9943100B949D7 /* LaunchScreen.storyboard */,
@@ -146,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				671EB96A21ECD1AE00B3788A /* marioViewController.swift in Sources */,
+				6754639921EE2F7D00135DBB /* LinkViewController.swift in Sources */,
+				671EB96A21ECD1AE00B3788A /* MarioViewController.swift in Sources */,
 				672A960421E9943100B949D7 /* ViewController.swift in Sources */,
 				672A960021E9943100B949D7 /* AppDelegate.swift in Sources */,
 			);
