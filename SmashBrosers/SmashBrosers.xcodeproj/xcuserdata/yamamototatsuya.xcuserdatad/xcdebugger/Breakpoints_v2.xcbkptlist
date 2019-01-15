@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmashBrosers/MarioViewController.swift"
+            timestampString = "569258033.852628"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmashBrosers/MarioViewController.swift"
+            timestampString = "569258033.85299"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "MarioViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmashBrosers/MarioViewController.swift"
+            timestampString = "569258033.853189"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "MarioViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SmashBrosers/MarioViewController.swift"
+            timestampString = "569258033.853382"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "MarioViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmashBrosers.MarioViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SmashBrosers.MarioViewController"
+                  moduleName = "SmashBrosers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamototatsuya/workspace/gs/App/AR_playground/SmashBrosers/SmashBrosers/MarioViewController.swift"
+                  timestampString = "569257792.39407"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmashBrosers.MarioViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; SmashBrosers.MarioViewController"
+                  moduleName = "SmashBrosers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamototatsuya/workspace/gs/App/AR_playground/SmashBrosers/SmashBrosers/MarioViewController.swift"
+                  timestampString = "569257792.3960969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmashBrosers.MarioViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SmashBrosers.MarioViewController&gt;"
+                  moduleName = "SmashBrosers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamototatsuya/workspace/gs/App/AR_playground/SmashBrosers/SmashBrosers/MarioViewController.swift"
+                  timestampString = "569257792.3980319"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmashBrosers.MarioViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;SmashBrosers.MarioViewController&gt;"
+                  moduleName = "SmashBrosers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamototatsuya/workspace/gs/App/AR_playground/SmashBrosers/SmashBrosers/MarioViewController.swift"
+                  timestampString = "569257792.399969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SmashBrosers.MarioViewController.__deallocating_deinit"
+                  moduleName = "SmashBrosers"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yamamototatsuya/workspace/gs/App/AR_playground/SmashBrosers/SmashBrosers/MarioViewController.swift"
+                  timestampString = "569257792.401877"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
