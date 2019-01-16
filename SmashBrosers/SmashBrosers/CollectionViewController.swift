@@ -11,10 +11,16 @@ import UIKit
 class CollectionViewController: UIViewController {
     @IBOutlet weak var returnButton: UIButton!
     
+    @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.resultLabel.isHidden = true
+        //result.font = UIFont(name: "Hiragino Sans", size: 64)
+        
         setImage()
+        judgeClear()
         returnButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         // Do any additional setup after loading the view.
     }
@@ -44,6 +50,19 @@ class CollectionViewController: UIViewController {
     
     @IBAction func goBackCollecting(_ sender: Any) {
         self.performSegue(withIdentifier: "collectSegue", sender: nil)
+    }
+    
+    func judgeClear(){
+        if marioGetFlag == 1 && luigiGetFlag == 1 && linkGetFlag == 1 && captainFalconGetFlag == 1 {
+            self.returnButton.isHidden = true
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                self.resultLabel.isHidden = false
+            }
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                self.returnButton.isHidden = false
+            }
+        }
     }
     
     /*
