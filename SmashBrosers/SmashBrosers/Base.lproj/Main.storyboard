@@ -89,19 +89,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-H1-A5e">
-                                <rect key="frame" x="164" y="551" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-H1-A5e">
+                                <rect key="frame" x="165" y="581" width="45" height="0.0"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="backCollectButton:" destination="V6Q-rI-AeQ" eventType="touchUpInside" id="6LC-4Y-orc"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-yi-Ye0">
+                                <rect key="frame" x="10" y="30" width="355" height="451"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-kE-wsQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="210"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-ee-CEH" customClass="new" customModule="SmashBrosers" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="captainFalcon_result" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-HB-OeJ">
+                                                <rect key="frame" x="185" y="0.0" width="170" height="210"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="3BN-HB-OeJ" firstAttribute="width" secondItem="MgC-ee-CEH" secondAttribute="width" id="na0-pa-We5"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-Bm-IkO">
+                                        <rect key="frame" x="0.0" y="241" width="355" height="210"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="link_result" translatesAutoresizingMaskIntoConstraints="NO" id="tDy-zd-iYf">
+                                                <rect key="frame" x="0.0" y="0.0" width="165.5" height="210"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="luigi_result" translatesAutoresizingMaskIntoConstraints="NO" id="u69-t6-lLu">
+                                                <rect key="frame" x="189.5" y="0.0" width="165.5" height="210"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="u69-t6-lLu" firstAttribute="width" secondItem="tDy-zd-iYf" secondAttribute="width" id="Smg-eD-fIN"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gEd-kE-wsQ" firstAttribute="leading" secondItem="tPu-Bm-IkO" secondAttribute="leading" id="93W-y8-aD4"/>
+                                    <constraint firstItem="tPu-Bm-IkO" firstAttribute="height" secondItem="gEd-kE-wsQ" secondAttribute="height" id="nHC-Qg-yZ4"/>
+                                    <constraint firstItem="gEd-kE-wsQ" firstAttribute="leading" secondItem="1uR-yi-Ye0" secondAttribute="leading" id="uDL-ad-FlK"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="top" secondItem="1uR-yi-Ye0" secondAttribute="bottom" constant="100" id="JYS-J4-dHs"/>
+                            <constraint firstItem="YGU-Gh-hdo" firstAttribute="bottom" secondItem="0Kl-H1-A5e" secondAttribute="bottom" constant="86" id="VlR-Dv-JiS"/>
+                            <constraint firstAttribute="trailing" secondItem="1uR-yi-Ye0" secondAttribute="trailing" constant="10" id="fUs-3B-YmD"/>
+                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="centerX" secondItem="NBz-MP-I5c" secondAttribute="centerX" id="qhT-Kf-Lx4"/>
+                            <constraint firstItem="1uR-yi-Ye0" firstAttribute="top" secondItem="YGU-Gh-hdo" secondAttribute="top" constant="10" id="tLO-1o-Msz"/>
+                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="leading" secondItem="YGU-Gh-hdo" secondAttribute="leading" constant="165" id="vTA-yl-6bL"/>
+                            <constraint firstItem="1uR-yi-Ye0" firstAttribute="leading" secondItem="NBz-MP-I5c" secondAttribute="leading" constant="10" id="x04-6K-FWW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YGU-Gh-hdo"/>
                     </view>
                     <connections>
+                        <outlet property="intoImage" destination="MgC-ee-CEH" id="TEk-yH-x2B"/>
                         <segue destination="XUT-w1-MXi" kind="show" identifier="collectSegue" id="zbn-cc-Q39"/>
                     </connections>
                 </viewController>
@@ -213,7 +260,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="captainFalcon_result" width="1160" height="1199"/>
         <image name="kinoko_green" width="32" height="32"/>
+        <image name="link_result" width="2000" height="2000"/>
+        <image name="luigi_result" width="891" height="1160"/>
         <image name="panchi" width="32" height="32"/>
         <image name="smashBrothers" width="30" height="30"/>
         <image name="star" width="32" height="32"/>
