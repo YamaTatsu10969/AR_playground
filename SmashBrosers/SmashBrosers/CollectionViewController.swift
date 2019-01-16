@@ -9,17 +9,19 @@
 import UIKit
 
 class CollectionViewController: UIViewController {
-
+    @IBOutlet weak var returnButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setImage()
-
+        returnButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         // Do any additional setup after loading the view.
     }
 
     
-    @IBOutlet weak var marioImage: new!
+    
+    @IBOutlet weak var marioImage: UIImageView!
     @IBOutlet weak var captainFalconImage: UIImageView!
     @IBOutlet weak var linkImage: UIImageView!
     @IBOutlet weak var luigiImage: UIImageView!
@@ -39,9 +41,11 @@ class CollectionViewController: UIViewController {
         }
     }
     
-    @IBAction func backCollectButton(_ sender: Any) {
+    
+    @IBAction func goBackCollecting(_ sender: Any) {
         self.performSegue(withIdentifier: "collectSegue", sender: nil)
     }
+    
     /*
     // MARK: - Navigation
 

@@ -92,20 +92,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-H1-A5e">
-                                <rect key="frame" x="165" y="581" width="45" height="0.0"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="backCollectButton:" destination="V6Q-rI-AeQ" eventType="touchUpInside" id="6LC-4Y-orc"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="1uR-yi-Ye0">
                                 <rect key="frame" x="10" y="30" width="355" height="451"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gEd-kE-wsQ">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="210"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-ee-CEH" customClass="new" customModule="SmashBrosers" customModuleProvider="target">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MgC-ee-CEH">
                                                 <rect key="frame" x="0.0" y="0.0" width="170" height="210"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-HB-OeJ">
@@ -137,15 +130,23 @@
                                     <constraint firstItem="gEd-kE-wsQ" firstAttribute="leading" secondItem="1uR-yi-Ye0" secondAttribute="leading" id="uDL-ad-FlK"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quT-2e-nbZ">
+                                <rect key="frame" x="129" y="501" width="117" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Return collecting"/>
+                                <connections>
+                                    <action selector="goBackCollecting:" destination="V6Q-rI-AeQ" eventType="touchUpInside" id="Akq-ba-icP"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="top" secondItem="1uR-yi-Ye0" secondAttribute="bottom" constant="100" id="JYS-J4-dHs"/>
-                            <constraint firstItem="YGU-Gh-hdo" firstAttribute="bottom" secondItem="0Kl-H1-A5e" secondAttribute="bottom" constant="86" id="VlR-Dv-JiS"/>
+                            <constraint firstItem="1uR-yi-Ye0" firstAttribute="centerX" secondItem="quT-2e-nbZ" secondAttribute="centerX" id="ATT-kP-QVG"/>
+                            <constraint firstAttribute="bottom" secondItem="1uR-yi-Ye0" secondAttribute="bottom" constant="186" id="TKo-P5-Tti"/>
                             <constraint firstAttribute="trailing" secondItem="1uR-yi-Ye0" secondAttribute="trailing" constant="10" id="fUs-3B-YmD"/>
-                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="centerX" secondItem="NBz-MP-I5c" secondAttribute="centerX" id="qhT-Kf-Lx4"/>
+                            <constraint firstItem="quT-2e-nbZ" firstAttribute="top" secondItem="1uR-yi-Ye0" secondAttribute="bottom" constant="20" id="h4R-Ra-zbg"/>
                             <constraint firstItem="1uR-yi-Ye0" firstAttribute="top" secondItem="YGU-Gh-hdo" secondAttribute="top" constant="10" id="tLO-1o-Msz"/>
-                            <constraint firstItem="0Kl-H1-A5e" firstAttribute="leading" secondItem="YGU-Gh-hdo" secondAttribute="leading" constant="165" id="vTA-yl-6bL"/>
                             <constraint firstItem="1uR-yi-Ye0" firstAttribute="leading" secondItem="NBz-MP-I5c" secondAttribute="leading" constant="10" id="x04-6K-FWW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YGU-Gh-hdo"/>
@@ -154,7 +155,8 @@
                         <outlet property="captainFalconImage" destination="3BN-HB-OeJ" id="8SL-mp-JRO"/>
                         <outlet property="linkImage" destination="tDy-zd-iYf" id="hzY-g1-4i7"/>
                         <outlet property="luigiImage" destination="u69-t6-lLu" id="Vqz-DH-qQO"/>
-                        <outlet property="marioImage" destination="MgC-ee-CEH" id="miL-j9-Jgd"/>
+                        <outlet property="marioImage" destination="MgC-ee-CEH" id="Cxg-Gn-l7n"/>
+                        <outlet property="returnButton" destination="quT-2e-nbZ" id="SPX-dd-GUK"/>
                         <segue destination="XUT-w1-MXi" kind="show" identifier="collectSegue" id="zbn-cc-Q39"/>
                     </connections>
                 </viewController>
@@ -178,6 +180,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  To the collection screen  "/>
+                                <connections>
+                                    <action selector="changeViewButton:" destination="jsG-jB-nVQ" eventType="touchUpInside" id="iNC-e3-uof"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -219,6 +224,9 @@
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="  To the collection screen  "/>
+                                <connections>
+                                    <action selector="changeViewButton:" destination="gTL-hY-xxj" eventType="touchUpInside" id="ofn-22-5z9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -310,6 +318,6 @@
         <image name="sword" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vjI-PA-3Fa"/>
+        <segue reference="VA5-5B-C3T"/>
     </inferredMetricsTieBreakers>
 </document>
