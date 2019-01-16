@@ -16,6 +16,7 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
    
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var changeViewButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,14 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        self.changeViewButton.isHidden = true
         
+        changeViewButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        
+    }
+    
+    @IBAction func changeViewButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toLuigiGet", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,7 +72,6 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            //マリオを立たせる
             if let luigiScene = SCNScene(named: "art.scnassets/Luigi/luigi.obj") {
                 
                 if let luigiNode = luigiScene.rootNode.childNodes.first {
@@ -73,13 +80,12 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
                     //自分の方を向くように
                     luigiNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(luigiNode)
+                    
                     //5秒経ったら画面を遷移させる
-                    //                    var timer:Timer = Timer()
-                    //                    timer = Timer.scheduledTimer(timeInterval: 5.0,
-                    //                                                                   target: self,
-                    //                                                                   selector: Selector("changeView"),
-                    //                                                                   userInfo: nil,
-                    //                                                                   repeats: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.changeViewButton.isHidden = false
+                        luigiGetFlag = 1
+                    }
                 }
             }
         }
@@ -87,7 +93,7 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
     }
     
     func changeView() {                                                                //
-        self.performSegue(withIdentifier: "toGetLuigi", sender: nil)                        //
+        self.performSegue(withIdentifier: "toLuigiGet", sender: nil)                        //
     }
     
     

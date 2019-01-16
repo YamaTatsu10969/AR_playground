@@ -17,9 +17,6 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
     
     @IBOutlet weak var changeViewButton: UIButton!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,6 +27,8 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
         sceneView.showsStatistics = true
         
         self.changeViewButton.isHidden = true
+        
+        changeViewButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         
     }
     
