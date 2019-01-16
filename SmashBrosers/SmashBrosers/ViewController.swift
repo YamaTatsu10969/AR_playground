@@ -10,6 +10,12 @@ import UIKit
 import SceneKit
 import ARKit
 
+//発見した画像のフラグ
+var marioGetFlag = 0
+var linkGetFlag = 0
+var captainFalconGetFlag = 0
+var luigiGetFlag = 0
+
 class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
@@ -63,13 +69,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         earthNode.addChildNode(luigiNode)
         earthNode.addChildNode(linkNode)
         
-        //これで画像をタップしたら、とかもできるようになる。
-//        //targetのselfはここで関数を使うよってこと
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
-//        //このsceneViewに追加するよ
-//        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-//        
-        // Set the scene to the view
         sceneView.scene = scene
     }
     

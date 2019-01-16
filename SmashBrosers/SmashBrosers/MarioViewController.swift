@@ -11,9 +11,13 @@ import SceneKit
 import ARKit
 
 class MarioViewController: UIViewController, ARSCNViewDelegate  {
-
+    
     
     @IBOutlet weak var sceneView: ARSCNView!
+    
+    @IBOutlet weak var changeViewButton: UIButton!
+    
+    
     
     
     override func viewDidLoad() {
@@ -25,7 +29,12 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        self.changeViewButton.isHidden = true
         
+    }
+    
+    @IBAction func changeViewButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toMarioGet", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,13 +81,11 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
                     //自分の方を向くように
                     marioNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(marioNode)
+                    
                     //5秒経ったら画面を遷移させる
-//                    var timer:Timer = Timer()
-//                    timer = Timer.scheduledTimer(timeInterval: 5.0,
-//                                                                   target: self,
-//                                                                   selector: Selector("changeView"),
-//                                                                   userInfo: nil,
-//                                                                   repeats: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.changeViewButton.isHidden = false
+                    }
                 }
             }
         }
@@ -86,18 +93,18 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
     }
     
     func changeView() {                                                                //
-        self.performSegue(withIdentifier: "toGetMario", sender: nil)                        //
+        self.performSegue(withIdentifier: "toMarioGet", sender: nil)                        //
     }
-
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

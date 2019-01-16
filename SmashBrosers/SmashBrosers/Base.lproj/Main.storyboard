@@ -51,6 +51,14 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHn-Gi-lcz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-La-3F1">
+                                <rect key="frame" x="164" y="566" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeViewButton:" destination="c3g-hb-cLN" eventType="touchUpInside" id="vHP-CW-eCR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -64,12 +72,29 @@
                     <tabBarItem key="tabBarItem" title="Mario" image="star" id="HXC-VM-eWI"/>
                     <navigationItem key="navigationItem" id="j8g-LC-XOD"/>
                     <connections>
+                        <outlet property="changeViewButton" destination="qJ5-La-3F1" id="4kn-AC-wSC"/>
                         <outlet property="sceneView" destination="MHn-Gi-lcz" id="9mA-ZJ-6e9"/>
+                        <segue destination="V6Q-rI-AeQ" kind="show" identifier="toMarioGet" id="vjI-PA-3Fa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4a-L2-Kv6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1414" y="29"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aNu-0b-YA6">
+            <objects>
+                <viewController id="V6Q-rI-AeQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NBz-MP-I5c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <viewLayoutGuide key="safeArea" id="YGU-Gh-hdo"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="80c-sZ-uGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2677" y="47"/>
         </scene>
         <!--Luigi-->
         <scene sceneID="XvJ-8j-8o2">
