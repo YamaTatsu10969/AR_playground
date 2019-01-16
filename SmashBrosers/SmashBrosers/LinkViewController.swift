@@ -34,7 +34,7 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-1", bundle: Bundle.main) {
             configuration.trackingImages = imageToTrack
             configuration.maximumNumberOfTrackedImages = 1
             print("Images...")
