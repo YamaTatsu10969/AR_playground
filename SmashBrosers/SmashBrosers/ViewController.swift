@@ -52,7 +52,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         if captainFalconGetFlag == 0 {
             //CaptainFalcon作成
-            let captainFalconScene = SCNScene(named:"art.scnassets/CaptainFalcon/cf.obj")!
+            let captainFalconScene = SCNScene(named:"art.scnassets/CaptainFalcon/captainFalcon.obj")!
             let captainFalconNode = captainFalconScene.rootNode
             captainFalconNode.position = SCNVector3(0,0,2)
             earthNode.addChildNode(captainFalconNode)

@@ -13,15 +13,30 @@ class CollectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        mario()
+        setImage()
 
         // Do any additional setup after loading the view.
     }
+
     
-    @IBOutlet weak var intoImage: new!
+    @IBOutlet weak var marioImage: new!
+    @IBOutlet weak var captainFalconImage: UIImageView!
+    @IBOutlet weak var linkImage: UIImageView!
+    @IBOutlet weak var luigiImage: UIImageView!
     
-    func mario(){
-        intoImage.image = UIImage(named: "mario_result")
+    func setImage(){
+        if marioGetFlag == 1 {
+            marioImage.image = UIImage(named: "mario_result")
+        }
+        if luigiGetFlag == 1 {
+            luigiImage.image = UIImage(named: "luigi_result")
+        }
+        if linkGetFlag == 1 {
+            linkImage.image = UIImage(named: "link_result")
+        }
+        if captainFalconGetFlag == 1 {
+            captainFalconImage.image = UIImage(named: "captainFalcon_result")
+        }
     }
     
     @IBAction func backCollectButton(_ sender: Any) {

@@ -16,6 +16,7 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
 
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var changeViewButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,14 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        self.changeViewButton.isHidden = true
         
+        changeViewButton.layer.cornerRadius = 10.0 // 角丸のサイズ
+        
+    }
+    
+    @IBAction func changeViewButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toCaptainFalconGet", sender: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -35,7 +43,7 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-cf", bundle: Bundle.main) {
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-captainFalcon", bundle: Bundle.main) {
             configuration.trackingImages = imageToTrack
             configuration.maximumNumberOfTrackedImages = 1
             print("Images...")
@@ -64,8 +72,8 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            //リンクを立たせる
-            if let captainFalconScene = SCNScene(named: "art.scnassets/CaptainFalcon/cf.obj") {
+        
+            if let captainFalconScene = SCNScene(named: "art.scnassets/CaptainFalcon/captainFalcon.obj") {
                 
                 if let captainFalconNode = captainFalconScene.rootNode.childNodes.first {
                     //画像に立つように
@@ -73,13 +81,12 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
                     //自分の方を向くように
                     captainFalconNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(captainFalconNode)
+                    
                     //5秒経ったら画面を遷移させる
-                    //                    var timer:Timer = Timer()
-                    //                    timer = Timer.scheduledTimer(timeInterval: 5.0,
-                    //                                                                   target: self,
-                    //                                                                   selector: Selector("changeView"),
-                    //                                                                   userInfo: nil,
-                    //                                                                   repeats: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.changeViewButton.isHidden = false
+                        captainFalconGetFlag = 1
+                    }
                 }
             }
         }
@@ -87,7 +94,7 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
     }
     
     func changeView() {                                                                //
-        self.performSegue(withIdentifier: "toGetMario", sender: nil)                        //
+        self.performSegue(withIdentifier: "toCaptainFalconGet", sender: nil)                        //
     }
     
     

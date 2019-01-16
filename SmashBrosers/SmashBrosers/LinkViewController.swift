@@ -15,6 +15,7 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
+    @IBOutlet weak var changeViewButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,18 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
         
+        self.changeViewButton.isHidden = true
+        
+        changeViewButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         
     }
+    
+   
+    @IBAction func didTouchedButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toLinkGet", sender: nil)
+    }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -63,7 +74,7 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            //リンクを立たせる
+            
             if let linkScene = SCNScene(named: "art.scnassets/Link/link.obj") {
                 
                 if let linkNode = linkScene.rootNode.childNodes.first {
@@ -72,13 +83,12 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
                     //自分の方を向くように
                     linkNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(linkNode)
+                    
                     //5秒経ったら画面を遷移させる
-                    //                    var timer:Timer = Timer()
-                    //                    timer = Timer.scheduledTimer(timeInterval: 5.0,
-                    //                                                                   target: self,
-                    //                                                                   selector: Selector("changeView"),
-                    //                                                                   userInfo: nil,
-                    //                                                                   repeats: false)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
+                        self.changeViewButton.isHidden = false
+                        linkGetFlag = 1
+                    }
                 }
             }
         }
@@ -86,7 +96,7 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
     }
     
     func changeView() {                                                                //
-        self.performSegue(withIdentifier: "toGetMario", sender: nil)                        //
+        self.performSegue(withIdentifier: "toLinkGet", sender: nil)                        //
     }
     
     
