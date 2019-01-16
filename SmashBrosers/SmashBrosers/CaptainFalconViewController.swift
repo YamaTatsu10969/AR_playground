@@ -1,8 +1,8 @@
 //
-//  marioViewController.swift
+//  CaptainFalconViewController.swift
 //  SmashBrosers
 //
-//  Created by 山本竜也 on 2019/1/14.
+//  Created by 山本竜也 on 2019/1/16.
 //  Copyright © 2019 山本竜也. All rights reserved.
 //
 
@@ -10,9 +10,10 @@ import UIKit
 import SceneKit
 import ARKit
 
-class MarioViewController: UIViewController, ARSCNViewDelegate  {
-
+class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
     
+    
+
     @IBOutlet weak var sceneView: ARSCNView!
     
     
@@ -34,7 +35,7 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-mario", bundle: Bundle.main) {
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-cf", bundle: Bundle.main) {
             configuration.trackingImages = imageToTrack
             configuration.maximumNumberOfTrackedImages = 1
             print("Images...")
@@ -63,22 +64,22 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
             planeNode.eulerAngles.x = -.pi / 2
             node.addChildNode(planeNode)
             
-            //マリオを立たせる
-            if let marioScene = SCNScene(named: "art.scnassets/Mario/mario.scn") {
+            //リンクを立たせる
+            if let captainFalconScene = SCNScene(named: "art.scnassets/CaptainFalcon/cf.obj") {
                 
-                if let marioNode = marioScene.rootNode.childNodes.first {
+                if let captainFalconNode = captainFalconScene.rootNode.childNodes.first {
                     //画像に立つように
-                    marioNode.eulerAngles.x = .pi / 2
+                    captainFalconNode.eulerAngles.x = .pi / 2
                     //自分の方を向くように
-                    marioNode.eulerAngles.z = .pi / 3 / 4
-                    planeNode.addChildNode(marioNode)
+                    captainFalconNode.eulerAngles.z = .pi / 3 / 4
+                    planeNode.addChildNode(captainFalconNode)
                     //5秒経ったら画面を遷移させる
-//                    var timer:Timer = Timer()
-//                    timer = Timer.scheduledTimer(timeInterval: 5.0,
-//                                                                   target: self,
-//                                                                   selector: Selector("changeView"),
-//                                                                   userInfo: nil,
-//                                                                   repeats: false)
+                    //                    var timer:Timer = Timer()
+                    //                    timer = Timer.scheduledTimer(timeInterval: 5.0,
+                    //                                                                   target: self,
+                    //                                                                   selector: Selector("changeView"),
+                    //                                                                   userInfo: nil,
+                    //                                                                   repeats: false)
                 }
             }
         }
@@ -88,16 +89,16 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
     func changeView() {                                                                //
         self.performSegue(withIdentifier: "toGetMario", sender: nil)                        //
     }
-
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
