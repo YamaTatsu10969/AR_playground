@@ -10,6 +10,12 @@ import UIKit
 import SceneKit
 import ARKit
 
+//発見した画像のフラグ
+var marioGetFlag = 0
+var linkGetFlag = 0
+var captainFalconGetFlag = 0
+var luigiGetFlag = 0
+
 class ViewController: UIViewController, ARSCNViewDelegate {
     
     @IBOutlet var sceneView: ARSCNView!
@@ -33,84 +39,83 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let earthNode = SCNNode(geometry: earth)
         earthNode.position = SCNVector3(0,0,-1)
         
-        //Mario作成
-        let marioScene = SCNScene(named:"art.scnassets/Mario/mario.scn")!
-        let marioNode = marioScene.rootNode
-        marioNode.position = SCNVector3(0,0,-1)
+        earthNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 4)))
+        scene.rootNode.addChildNode(earthNode)
         
-        //CaptainFalcon作成
-        let captainFalconScene = SCNScene(named:"art.scnassets/CaptainFalcon/cf.obj")!
-        let captainFalconNode = captainFalconScene.rootNode
-        captainFalconNode.position = SCNVector3(0,0,2)
+        if marioGetFlag == 0 {
+            //Mario作成
+            let marioScene = SCNScene(named:"art.scnassets/Mario/mario.scn")!
+            let marioNode = marioScene.rootNode
+            marioNode.position = SCNVector3(0,0,-1)
+            earthNode.addChildNode(marioNode)
+        }
         
-        //Luigi作成
-        let luigiScene = SCNScene(named:"art.scnassets/Luigi/luigi.obj")!
-        let luigiNode = luigiScene.rootNode
-        luigiNode.position = SCNVector3(1,0,0)
+        if captainFalconGetFlag == 0 {
+            //CaptainFalcon作成
+            let captainFalconScene = SCNScene(named:"art.scnassets/CaptainFalcon/cf.obj")!
+            let captainFalconNode = captainFalconScene.rootNode
+            captainFalconNode.position = SCNVector3(0,0,2)
+            earthNode.addChildNode(captainFalconNode)
+            
+        }
         
-        //Link作成
-        let linkScene = SCNScene(named:"art.scnassets/Link/link.obj")!
-        let linkNode = linkScene.rootNode
-        linkNode.position = SCNVector3(-1,0,0)
+        if luigiGetFlag == 0 {
+            //Luigi作成
+            let luigiScene = SCNScene(named:"art.scnassets/Luigi/luigi.obj")!
+            let luigiNode = luigiScene.rootNode
+            luigiNode.position = SCNVector3(1,0,0)
+            earthNode.addChildNode(luigiNode)
+            
+        }
+        
+        if linkGetFlag == 0 {
+            //Link作成
+            let linkScene = SCNScene(named:"art.scnassets/Link/link.obj")!
+            let linkNode = linkScene.rootNode
+            linkNode.position = SCNVector3(-1,0,0)
+            earthNode.addChildNode(linkNode)
+        }
         
         //動きはnodeに対してつけていく。nodeをどこに置くかを変える　timerで,earthNode.position = SCNVector3(0,0,-1) を減らしていくのもあり。
         //x,y,z は軸の方向、duration はどのくらいの間隔で回るか
-        earthNode.runAction(SCNAction.repeatForever(SCNAction.rotateBy(x: 0, y: 2, z: 0, duration: 4)))
         
-        scene.rootNode.addChildNode(earthNode)
-        earthNode.addChildNode(marioNode)
-        earthNode.addChildNode(captainFalconNode)
-        earthNode.addChildNode(luigiNode)
-        earthNode.addChildNode(linkNode)
         
-        //これで画像をタップしたら、とかもできるようになる。
-//        //targetのselfはここで関数を使うよってこと
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapped))
-//        //このsceneViewに追加するよ
-//        self.sceneView.addGestureRecognizer(tapGestureRecognizer)
-//        
-        // Set the scene to the view
+        
+        
         sceneView.scene = scene
     }
     
-//    @objc func tapped(recognizer :UIGestureRecognizer){
-//        //        print("タップしたよ")
-//        // ! はアプリ落ちる。必ずsceneViewなら !で良い。無難なのは？でnilを返す
-//        let sceneView = recognizer.view as! SCNView
-//        //どこを触ったか
-//        let touchLocation = recognizer.location(in: sceneView)
-//        //
-//        let hitResults = sceneView.hitTest(touchLocation, options: [:])
-//
-//        if !hitResults.isEmpty {
-//
-//            let node = hitResults[0].node
-//            if let name = node.geometry?.name {
-//                if name == "moon"{
-//                    node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
-//                }
-//            }
-//
-//            //            let material = node.geometry?.material(named: "Color")
-//            //
-//            //            material?.diffuse.contents = UIColor.random()
-//        }
-//    }
+    //    @objc func tapped(recognizer :UIGestureRecognizer){
+    //        //        print("タップしたよ")
+    //        // ! はアプリ落ちる。必ずsceneViewなら !で良い。無難なのは？でnilを返す
+    //        let sceneView = recognizer.view as! SCNView
+    //        //どこを触ったか
+    //        let touchLocation = recognizer.location(in: sceneView)
+    //        //
+    //        let hitResults = sceneView.hitTest(touchLocation, options: [:])
+    //
+    //        if !hitResults.isEmpty {
+    //
+    //            let node = hitResults[0].node
+    //            if let name = node.geometry?.name {
+    //                if name == "moon"{
+    //                    node.geometry?.firstMaterial?.diffuse.contents = UIColor.red
+    //                }
+    //            }
+    //
+    //            //            let material = node.geometry?.material(named: "Color")
+    //            //
+    //            //            material?.diffuse.contents = UIColor.random()
+    //        }
+    //    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-       // let configuration = ARWorldTrackingConfiguration()
+        // let configuration = ARWorldTrackingConfiguration()
         let imageConfiguration = ARImageTrackingConfiguration()
         
-        //ARImageTrackingConfigurationに目的の画像を設定
-//        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
-//            imageConfiguration.trackingImages = imageToTrack
-//            imageConfiguration.maximumNumberOfTrackedImages = 1
-//            print("Images...")
-//        }
-
         // Run the view's session
         sceneView.session.run(imageConfiguration)
     }
