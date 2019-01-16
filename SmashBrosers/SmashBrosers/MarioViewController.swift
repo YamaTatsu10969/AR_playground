@@ -34,7 +34,7 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
         // Create a session configuration
         let configuration = ARImageTrackingConfiguration()
         
-        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources", bundle: Bundle.main) {
+        if let imageToTrack = ARReferenceImage.referenceImages(inGroupNamed: "AR Resources-mario", bundle: Bundle.main) {
             configuration.trackingImages = imageToTrack
             configuration.maximumNumberOfTrackedImages = 1
             print("Images...")
