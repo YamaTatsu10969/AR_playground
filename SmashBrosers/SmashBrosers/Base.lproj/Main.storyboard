@@ -74,7 +74,7 @@
         <!--Luigi-->
         <scene sceneID="XvJ-8j-8o2">
             <objects>
-                <viewController id="jsG-jB-nVQ" sceneMemberID="viewController">
+                <viewController id="jsG-jB-nVQ" customClass="LuigiViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Awu-Ff-k6D">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="QI4-6S-23s"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Luigi" image="kinoko_green" id="Kr2-UN-1Q4"/>
+                    <connections>
+                        <outlet property="sceneView" destination="4yh-KB-C0H" id="JpM-hq-qCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbe-i2-AuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
