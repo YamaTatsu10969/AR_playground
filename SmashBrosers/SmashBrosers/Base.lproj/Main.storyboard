@@ -81,20 +81,33 @@
             </objects>
             <point key="canvasLocation" x="1414" y="29"/>
         </scene>
-        <!--View Controller-->
+        <!--Collection View Controller-->
         <scene sceneID="aNu-0b-YA6">
             <objects>
-                <viewController id="V6Q-rI-AeQ" sceneMemberID="viewController">
+                <viewController id="V6Q-rI-AeQ" customClass="CollectionViewController" customModule="SmashBrosers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NBz-MP-I5c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Kl-H1-A5e">
+                                <rect key="frame" x="164" y="551" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backCollectButton:" destination="V6Q-rI-AeQ" eventType="touchUpInside" id="6LC-4Y-orc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <viewLayoutGuide key="safeArea" id="YGU-Gh-hdo"/>
                     </view>
+                    <connections>
+                        <segue destination="XUT-w1-MXi" kind="show" identifier="collectSegue" id="zbn-cc-Q39"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80c-sZ-uGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2677" y="47"/>
+            <point key="canvasLocation" x="3480.8000000000002" y="-780.35982008995506"/>
         </scene>
         <!--Luigi-->
         <scene sceneID="XvJ-8j-8o2">

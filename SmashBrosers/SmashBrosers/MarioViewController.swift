@@ -85,6 +85,7 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
                     //5秒経ったら画面を遷移させる
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         self.changeViewButton.isHidden = false
+                        marioGetFlag = 1
                     }
                 }
             }
