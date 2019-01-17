@@ -31,7 +31,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="All Star" image="smashBrothers" badgeValue="All Star" id="Gbc-Gd-3la" userLabel="All Star"/>
+                    <tabBarItem key="tabBarItem" title="All Star" image="smashBrothers" badgeValue="Hint!" id="Gbc-Gd-3la" userLabel="All Star">
+                        <color key="badgeColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
@@ -623,6 +625,7 @@ Cg
         <image name="sword" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="L0g-Ha-Has"/>
         <segue reference="zbn-cc-Q39"/>
         <segue reference="VA5-5B-C3T"/>
     </inferredMetricsTieBreakers>
