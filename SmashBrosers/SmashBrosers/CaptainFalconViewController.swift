@@ -82,7 +82,7 @@ class CaptainFalconViewController: UIViewController, ARSCNViewDelegate  {
                     captainFalconNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(captainFalconNode)
                     
-                    //5秒経ったら画面を遷移させる
+                    //5秒経ったらボタンを表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         self.changeViewButton.isHidden = false
                         captainFalconGetFlag = 1

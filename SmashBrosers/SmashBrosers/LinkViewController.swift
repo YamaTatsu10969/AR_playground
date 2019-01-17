@@ -84,7 +84,7 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
                     linkNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(linkNode)
                     
-                    //5秒経ったら画面を遷移させる
+                   //5秒経ったらボタンを表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         self.changeViewButton.isHidden = false
                         linkGetFlag = 1

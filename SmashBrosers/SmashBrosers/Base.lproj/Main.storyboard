@@ -52,10 +52,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ5-La-3F1">
-                                <rect key="frame" x="97.5" y="558" width="180" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="547" width="343" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  To the collection screen  "/>
+                                <state key="normal" title="  Go to the collection screen  "/>
                                 <connections>
                                     <action selector="changeViewButton:" destination="c3g-hb-cLN" eventType="touchUpInside" id="vHP-CW-eCR"/>
                                 </connections>
@@ -131,10 +132,13 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quT-2e-nbZ">
-                                <rect key="frame" x="129" y="501" width="117" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="110.5" y="501" width="154" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Return collecting"/>
+                                <state key="normal" title="Return collecting">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="goBackCollecting:" destination="V6Q-rI-AeQ" eventType="touchUpInside" id="Akq-ba-icP"/>
                                 </connections>
@@ -167,6 +171,7 @@
                         <outlet property="resultLabel" destination="jpx-OV-y8c" id="Bs8-L8-oiD"/>
                         <outlet property="returnButton" destination="quT-2e-nbZ" id="SPX-dd-GUK"/>
                         <segue destination="XUT-w1-MXi" kind="show" identifier="collectSegue" id="zbn-cc-Q39"/>
+                        <segue destination="gcn-cK-eyE" kind="show" identifier="backStartSegue" id="Qnh-KL-y8d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80c-sZ-uGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -185,10 +190,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lnU-eK-tQZ">
-                                <rect key="frame" x="97.5" y="558" width="180" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="547" width="343" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  To the collection screen  "/>
+                                <state key="normal" title="  Go to the collection screen  "/>
                                 <connections>
                                     <action selector="changeViewButton:" destination="jsG-jB-nVQ" eventType="touchUpInside" id="iNC-e3-uof"/>
                                 </connections>
@@ -205,7 +211,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QI4-6S-23s"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Luigi" image="kinoko_green" id="Kr2-UN-1Q4"/>
+                    <tabBarItem key="tabBarItem" title="Luigi" image="kinoko_green" id="Kr2-UN-1Q4">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="changeViewButton" destination="lnU-eK-tQZ" id="UkH-t0-ESc"/>
                         <outlet property="sceneView" destination="4yh-KB-C0H" id="JpM-hq-qCF"/>
@@ -229,10 +237,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2nS-0W-uEf">
-                                <rect key="frame" x="97.5" y="558" width="180" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="547" width="343" height="41"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  To the collection screen  "/>
+                                <state key="normal" title="  Go to the collection screen  "/>
                                 <connections>
                                     <action selector="changeViewButton:" destination="gTL-hY-xxj" eventType="touchUpInside" id="ofn-22-5z9"/>
                                 </connections>
@@ -269,10 +278,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz4-vW-cgE">
-                                <rect key="frame" x="97.5" y="558" width="180" height="30"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="16" y="547" width="343" height="41"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="24"/>
                                 <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  To the collection screen  "/>
+                                <state key="normal" title="  Go to the collection screen  "/>
                                 <connections>
                                     <action selector="didTouchedButton:" destination="eKL-IM-KM4" eventType="touchUpInside" id="c3S-3m-EkY"/>
                                 </connections>
@@ -613,6 +623,7 @@ Cg
         <image name="sword" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WUR-kw-XmJ"/>
+        <segue reference="zbn-cc-Q39"/>
+        <segue reference="VA5-5B-C3T"/>
     </inferredMetricsTieBreakers>
 </document>

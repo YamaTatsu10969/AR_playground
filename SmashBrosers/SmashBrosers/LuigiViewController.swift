@@ -81,7 +81,7 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
                     luigiNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(luigiNode)
                     
-                    //5秒経ったら画面を遷移させる
+                    //5秒経ったらボタンを表示
                     DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
                         self.changeViewButton.isHidden = false
                         luigiGetFlag = 1

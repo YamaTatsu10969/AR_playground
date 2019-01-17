@@ -24,7 +24,7 @@ class CollectionViewController: UIViewController {
         returnButton.layer.cornerRadius = 10.0 // 角丸のサイズ
         // Do any additional setup after loading the view.
     }
-
+    
     
     
     @IBOutlet weak var marioImage: UIImageView!
@@ -49,30 +49,39 @@ class CollectionViewController: UIViewController {
     
     
     @IBAction func goBackCollecting(_ sender: Any) {
-        self.performSegue(withIdentifier: "collectSegue", sender: nil)
+        if marioGetFlag == 1 && luigiGetFlag == 1 && linkGetFlag == 1 && captainFalconGetFlag == 1 {
+            marioGetFlag = 0
+            luigiGetFlag = 0
+            linkGetFlag = 0
+            captainFalconGetFlag = 0
+            self.performSegue(withIdentifier: "backStartSegue", sender: nil)
+        }else{
+            self.performSegue(withIdentifier: "collectSegue", sender: nil)
+        }
     }
     
     func judgeClear(){
         if marioGetFlag == 1 && luigiGetFlag == 1 && linkGetFlag == 1 && captainFalconGetFlag == 1 {
+            self.returnButton.setTitle("Back to the Start Screen", for: .normal)
             self.returnButton.isHidden = true
             DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                 self.resultLabel.isHidden = false
             }
             
-            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 6.0) {
                 self.returnButton.isHidden = false
             }
         }
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
