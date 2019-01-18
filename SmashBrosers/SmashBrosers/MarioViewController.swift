@@ -75,8 +75,8 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
             if let marioScene = SCNScene(named: "art.scnassets/Mario/mario.scn") {
                 
                 if let marioNode = marioScene.rootNode.childNodes.first {
-                    //画像に立つように
-                    marioNode.eulerAngles.x = .pi / 2
+                    //画像の前に立つように
+                    marioNode.eulerAngles.x = .pi / 8
                     //自分の方を向くように
                     marioNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(marioNode)

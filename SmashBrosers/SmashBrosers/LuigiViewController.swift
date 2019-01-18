@@ -75,8 +75,8 @@ class LuigiViewController: UIViewController, ARSCNViewDelegate  {
             if let luigiScene = SCNScene(named: "art.scnassets/Luigi/luigi.obj") {
                 
                 if let luigiNode = luigiScene.rootNode.childNodes.first {
-                    //画像に立つように
-                    luigiNode.eulerAngles.x = .pi / 2
+                    //画像の前に立つように
+                    luigiNode.eulerAngles.x = .pi / 8
                     //自分の方を向くように
                     luigiNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(luigiNode)

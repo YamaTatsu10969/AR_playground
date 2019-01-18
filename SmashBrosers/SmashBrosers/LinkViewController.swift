@@ -78,8 +78,8 @@ class LinkViewController: UIViewController, ARSCNViewDelegate  {
             if let linkScene = SCNScene(named: "art.scnassets/Link/link.obj") {
                 
                 if let linkNode = linkScene.rootNode.childNodes.first {
-                    //画像に立つように
-                    linkNode.eulerAngles.x = .pi / 2
+                    //画像の前に立つように
+                    linkNode.eulerAngles.x = .pi / 8
                     //自分の方を向くように
                     linkNode.eulerAngles.z = .pi / 3 / 4
                     planeNode.addChildNode(linkNode)
