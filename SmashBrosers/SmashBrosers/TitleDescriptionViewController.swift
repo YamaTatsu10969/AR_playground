@@ -17,7 +17,7 @@ class TitleDescriptionViewController: UIViewController {
         super.viewDidLoad()
         
         startButton.layer.cornerRadius = 20.0
-        descriptionLabel.layer.cornerRadius = 1.0
+        
         //表示可能最大行数を指定
         descriptionLabel.numberOfLines = 5
         //contentsのサイズに合わせてobujectのサイズを変える
@@ -25,7 +25,11 @@ class TitleDescriptionViewController: UIViewController {
         
         //LineSpaceStyle.lineSpacing = 20.0
         
-        descriptionLabel.text = "1. 散らばった仲間を見つけ出そう！\n    地球の周りに捕まった仲間のヒントがあるぞ\n2. 下のタブと一致した画像を見つけよう！\n3. 全ての仲間を助け出そう！\n    地球の周りに捕まった仲間のヒントがあるぞ"
+        descriptionLabel.text = " 1. 散らばった仲間を見つけ出そう！ \n     地球の周りに捕まった仲間のヒントがあるぞ \n 2. 下のタブと一致した画像を見つけよう！\n 3. 全ての仲間を助け出そう！ \n     地球の周りに捕まった仲間のヒントがあるぞ "
+        
+        descriptionLabel.layer.borderWidth = 2.0
+        descriptionLabel.layer.borderColor = UIColor.white.cgColor
+        descriptionLabel.layer.cornerRadius = 1.0
 
         // Do any additional setup after loading the view.
     }
