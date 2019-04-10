@@ -1,7 +1,7 @@
 # AR_playground
 
 #完成品　「大捜査スマッシュブラザーズ」
-![smashBrothersAR.gif](https://qiita-image-store.s3.amazonaws.com/0/326574/c4d75f9e-ca29-487e-d809-7d1a2d3fc321.gif)
+![smashBrothersAR.gif](https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/smashBrothersAR.gif)
 
 # はじめに
 やっと作品を作ることができたので備忘録として、作品として記録するために、本記事を書いております！(本作品はSwift始めて1.5ヶ月目に2週間もかけて作成しました。)
@@ -151,7 +151,7 @@ sceneViewをviewControllerに配置し、コードにsceneViewを紐付けてお
 (画像を載せたかったのですが、最初の投稿なので、投稿の画像の制限が２Mらしいです。。。ここの画像は割愛させていただきます。)
 
 ####ここまできたら、画像を見つけたら、マリオが出てくる！！！:v:
-![marioAR.gif](https://qiita-image-store.s3.amazonaws.com/0/326574/1c8867ee-20e1-20cc-1f30-adcd65db9270.gif)
+![marioAR.gif](https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/marioAR.gif)
 
 ##ゲーム性について
 最初のGIFをみてもらうとわかる通り、４つの画像を見つけるとクリアできる仕様にしています！
@@ -182,7 +182,7 @@ Javaで業務システムの保守運用を行なっていますがほぼコー�
 
 
 # Completed item "Major Investigation Smash Brothers"
-[smashBrothersAR.gif] (https://qiita-image-store.s3.amazonaws.com/0/326574/c4d75f9e-ca29-487e-d809-7d1a2d3fc321.gif)
+[smashBrothersAR.gif] (https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/smashBrothersAR.gif)
 
 # Introduction
 Since I could finally make a work, I wrote this article to record it as a work as a memorandum! (This work has been created in Swift for 1.5 weeks and 2 weeks.)
@@ -332,8 +332,8 @@ class MarioViewController: UIViewController, ARSCNViewDelegate {
 You need to place sceneView in viewController and attach code to sceneView.
 (I wanted to put an image, but because it is the first post, the limit of the image of the post seems to be 2 M. ... The image here will be omitted.)
 
-# # # # If you come here, Mario will come out when you find the image! ! ! : v:
-[marioAR.gif] (https://qiita-image-store.s3.amazonaws.com/0/326574/1c8867ee-20e1-20cc-1f30-adcd65db9270.gif)
+# # #  If you come here, Mario will come out when you find the image! ! ! 
+[marioAR.gif] (https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/marioAR.gif)
 
 # # About the game nature
 As you can see from the first GIF, it has specifications that can be cleared by finding four images!
