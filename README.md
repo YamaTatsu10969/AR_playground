@@ -150,7 +150,7 @@ class MarioViewController: UIViewController, ARSCNViewDelegate  {
 sceneViewをviewControllerに配置し、コードにsceneViewを紐付けておく必要があります。
 (画像を載せたかったのですが、最初の投稿なので、投稿の画像の制限が２Mらしいです。。。ここの画像は割愛させていただきます。)
 
-####ここまできたら、画像を見つけたら、マリオが出てくる！！！:v:
+## ここまできたら、画像を見つけたら、マリオが出てくる！！！:v:
 ![marioAR.gif](https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/marioAR.gif)
 
 ##ゲーム性について
