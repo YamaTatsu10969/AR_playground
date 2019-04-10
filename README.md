@@ -191,7 +191,7 @@ I will continue to output.
 
 If you think it would be interesting, I would like to press a good one!
 
-# # An article I referenced this time
+## An article I referenced this time
 The title was very interesting and very helpful.
 I was very grateful.
 "Summon the Blue-eyed White Dragon to Sacrifice Holiday 2nd!" @Shunp
@@ -235,7 +235,7 @@ The name has been changed to "AR Resource-mario".
 [Screenshot 2019-02-17 16.46.29.png] (https://qiita-image-stor.3.amazonaws.com/0/326574/aef539dd-9ea7-c9f8-ab58-cc5b6146bc8c.png)
 
 
-# # Recognize the image and display Mario
+## Recognize the image and display Mario
 
 Below is the full text of ViewController for Mario Search + Display!
 Comment is put in the comment out.
@@ -332,10 +332,10 @@ class MarioViewController: UIViewController, ARSCNViewDelegate {
 You need to place sceneView in viewController and attach code to sceneView.
 (I wanted to put an image, but because it is the first post, the limit of the image of the post seems to be 2 M. ... The image here will be omitted.)
 
-# # #  If you come here, Mario will come out when you find the image! ! ! 
+###  If you come here, Mario will come out when you find the image! ! ! 
 [marioAR.gif] (https://github.com/YamaTatsu10969/Image_GIF_Movie/blob/master/image_gif/gif/marioAR.gif)
 
-# # About the game nature
+## About the game nature
 As you can see from the first GIF, it has specifications that can be cleared by finding four images!
 We have marioGetFlag, linkGetFlag .... etc as a global function in ViewController of the screen on which the earth is turning.
 After loading the image, I could set the flag, erase the model around the globe, or show the image of the result screen!
@@ -343,14 +343,14 @@ After loading the image, I could set the flag, erase the model around the globe,
 By the way, the logo of the first "Major Smash Bros." is handmade and created on story.board.
 It took about an hour to create this logo using StackView. Lol
 
-# # The way to here
+## The way to here
 I am doing maintenance operation of the business system with Java and write almost no code. (The system was better understood)
 I didn't really feel that I was proficient in programming, so I made a strong desire to make and improve my own products.
 So I'm learning Swift at a school called Self Education + G's Academy.
 I think that I was able to finally create one product in 2.5 months after entering the school.
 Programming has been frustrated a number of times, but writing code has finally made it seem fun! : relaxed:
 
-##Finally
+## Finally
 I think that there are a lot of confusing points because it is the first post.
 I think there are some strange ways to write code.
 Please advise if you find something! ! !
